@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+header {
+  background-color: #2d89ef;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.rules,
+.quiz,
+.result,
+.leaderboard {
+  margin-top: 30px;
+}
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+button {
+  padding: 10px 20px;
+  background-color: #2d89ef;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #1b5fad;
+}
+input[type="text"] {
+  padding: 10px;
+  margin-top: 10px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+input[type="number"]{
+    padding: 10px;
+  margin-top: 10px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+#timer {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #d9534f;
+}
+.question-holder{
+    min-width: 200px;
+    display: flex;
+    padding: 10px 20px;
+    background-color: rgb(106, 153, 255);
+    gap: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#questionContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.rules{
+    display: flex; align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rules button{
+    margin-top: 10px;
+}
+#leaderboardList{
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#leaderboardList tr{
+    padding: 0 20px !important;
+}
+
+/* table */
+.table_component {
+    overflow: auto;
+    width: 100%;
+}
+
+.table_component table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+.table_component caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.table_component th {
+    border: 1px solid #dededf;
+    background-color: #eceff1;
+    color: #000000;
+    padding: 5px;
+}
+
+.table_component td {
+    border: 1px solid #dededf;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+}
+@media (max-width:768px) {
+    .rules{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .rules img{
+        width: 100px;
+    }
+}
